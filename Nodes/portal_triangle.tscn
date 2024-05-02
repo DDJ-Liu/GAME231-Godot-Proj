@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://by4hsfx2sreo2"]
+
+[ext_resource type="Texture2D" uid="uid://00ie3qykodmj" path="res://Assets/PortalTriangle/PortalTriangle1.png" id="1_frb0q"]
+[ext_resource type="Texture2D" uid="uid://cx6rkf6e11p1v" path="res://Assets/PortalTriangle/PortalTriangle2.png" id="2_j2yct"]
+[ext_resource type="Texture2D" uid="uid://jcqnet7igt1p" path="res://Assets/PortalTriangle/PortalTriangle3.png" id="3_fqbkd"]
+[ext_resource type="Texture2D" uid="uid://baxw5x5jspff0" path="res://Assets/PortalTriangle/PortalTriangle4.png" id="4_b4n5h"]
+[ext_resource type="Script" path="res://Script/Portal.gd" id="5_aihou"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sw81c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_frb0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_j2yct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fqbkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_b4n5h")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]
+
+[node name="portalTriangle" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_sw81c")
+animation = &"idle"
+frame_progress = 0.826391
+centered = false
+script = ExtResource("5_aihou")

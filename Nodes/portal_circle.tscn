@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://cvuqg67x2kwpx"]
+
+[ext_resource type="Texture2D" uid="uid://bow6om2yhgxms" path="res://Assets/PortalCircle/PortalCircle1.png" id="1_fywsl"]
+[ext_resource type="Texture2D" uid="uid://dody853mqvcwg" path="res://Assets/PortalCircle/PortalCircle2.png" id="2_b55sl"]
+[ext_resource type="Texture2D" uid="uid://bt4feflkcjl81" path="res://Assets/PortalCircle/PortalCircle3.png" id="3_ib8b1"]
+[ext_resource type="Texture2D" uid="uid://cda30lfxociip" path="res://Assets/PortalCircle/PortalCircle4.png" id="4_63byv"]
+[ext_resource type="Script" path="res://Script/Portal.gd" id="5_2dh4p"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mmy2e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fywsl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_b55sl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ib8b1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_63byv")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]
+
+[node name="portalCircle" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_mmy2e")
+animation = &"idle"
+frame_progress = 0.785944
+centered = false
+script = ExtResource("5_2dh4p")

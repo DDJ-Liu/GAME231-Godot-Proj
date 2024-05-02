@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4ht65fcrjw67"]
+
+[ext_resource type="Texture2D" uid="uid://co6fkg2k1slxg" path="res://Assets/BorderHorizontal.png" id="1_hufoq"]
+
+[node name="horizontalBorder" type="Sprite2D"]
+texture = ExtResource("1_hufoq")
+centered = false

@@ -1,0 +1,83 @@
+[gd_scene load_steps=19 format=3 uid="uid://b37ute0l2rk4q"]
+
+[ext_resource type="Texture2D" uid="uid://rb5ibi28o8og" path="res://Assets/Princess/Princess1.png" id="1_jj8ed"]
+[ext_resource type="Texture2D" uid="uid://cr08b2b3n76s3" path="res://Assets/Princess/Princess2.png" id="2_5mucl"]
+[ext_resource type="Texture2D" uid="uid://bqhw13roetjnd" path="res://Assets/Princess/Princess3.png" id="3_8jnge"]
+[ext_resource type="Texture2D" uid="uid://db1effyqogfta" path="res://Assets/Princess/Princess4.png" id="4_u1sgd"]
+[ext_resource type="Texture2D" uid="uid://bryxysve2i80w" path="res://Assets/Princess/Princess5.png" id="5_4s5yc"]
+[ext_resource type="Texture2D" uid="uid://dj5p3i31te28t" path="res://Assets/Princess/Princess6.png" id="6_x8k3j"]
+[ext_resource type="Texture2D" uid="uid://dsynxbngqgenj" path="res://Assets/Princess/Princess7.png" id="7_b1lyo"]
+[ext_resource type="Texture2D" uid="uid://0pjn7gybuis8" path="res://Assets/Princess/Princess8.png" id="8_iqhut"]
+[ext_resource type="Texture2D" uid="uid://bgdtr7a4gxcls" path="res://Assets/Princess/Princess9.png" id="9_vskkt"]
+[ext_resource type="Texture2D" uid="uid://blrenhbad1kkq" path="res://Assets/Princess/Princess10.png" id="10_jmhl6"]
+[ext_resource type="Texture2D" uid="uid://dycbqwqbe1aqw" path="res://Assets/Princess/Princess11.png" id="11_3t0ok"]
+[ext_resource type="Texture2D" uid="uid://djh7vy1pd8thq" path="res://Assets/Princess/Princess12.png" id="12_0uv8w"]
+[ext_resource type="Texture2D" uid="uid://c7sagklwkupot" path="res://Assets/Princess/Princess13.png" id="13_q25ta"]
+[ext_resource type="Texture2D" uid="uid://m0lim7chfojg" path="res://Assets/Princess/Princess14.png" id="14_v088w"]
+[ext_resource type="Texture2D" uid="uid://dp2hh62r46erj" path="res://Assets/Princess/Princess15.png" id="15_gyeav"]
+[ext_resource type="Texture2D" uid="uid://0j3kq41riobs" path="res://Assets/Princess/Princess16.png" id="16_ra3ib"]
+[ext_resource type="Script" path="res://Script/princess.gd" id="17_ljvu8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o3ukj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jj8ed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_5mucl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8jnge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_u1sgd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4s5yc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_x8k3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_b1lyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_iqhut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vskkt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jmhl6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_3t0ok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0uv8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_q25ta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_v088w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_gyeav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ra3ib")
+}],
+"loop": true,
+"name": &"Anim",
+"speed": 8.0
+}]
+
+[node name="Princess" type="AnimatedSprite2D"]
+z_index = 100
+sprite_frames = SubResource("SpriteFrames_o3ukj")
+animation = &"Anim"
+frame_progress = 0.582142
+centered = false
+script = ExtResource("17_ljvu8")

@@ -1,0 +1,56 @@
+[gd_scene load_steps=11 format=3 uid="uid://c7wdpav405vep"]
+
+[ext_resource type="Texture2D" uid="uid://c8jjaxwvtkp8w" path="res://Assets/Bomb/Bomb1.png" id="1_j52fs"]
+[ext_resource type="Texture2D" uid="uid://ja3hbx3rw18n" path="res://Assets/Bomb/Bomb2.png" id="2_46ons"]
+[ext_resource type="Texture2D" uid="uid://coqx6vkepwsny" path="res://Assets/Bomb/Bomb3.png" id="3_e20w3"]
+[ext_resource type="Texture2D" uid="uid://774qdbj5msut" path="res://Assets/Bomb/Bomb4.png" id="4_g5ogp"]
+[ext_resource type="Texture2D" uid="uid://ck61yaxr52xdk" path="res://Assets/Bomb/Bomb5.png" id="5_ctrdn"]
+[ext_resource type="Texture2D" uid="uid://cykga2cue80sp" path="res://Assets/Bomb/Bomb6.png" id="6_iaoor"]
+[ext_resource type="Texture2D" uid="uid://dh7sw6t0cxfwm" path="res://Assets/Bomb/Bomb7.png" id="7_25agp"]
+[ext_resource type="Texture2D" uid="uid://cwylof321n6nk" path="res://Assets/Bomb/Bomb8.png" id="8_xyv2d"]
+[ext_resource type="Texture2D" uid="uid://dwuitc6f04t62" path="res://Assets/Bomb/Bomb9.png" id="9_4h4s5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sermq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_j52fs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_46ons")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_e20w3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_g5ogp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ctrdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_iaoor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_25agp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xyv2d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4h4s5")
+}],
+"loop": false,
+"name": &"explode",
+"speed": 2.0
+}]
+
+[node name="Bomb" type="AnimatedSprite2D"]
+z_index = 500
+z_as_relative = false
+position = Vector2(120, 134)
+sprite_frames = SubResource("SpriteFrames_sermq")
+animation = &"explode"

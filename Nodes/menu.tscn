@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2prt7fhqymw"]
+
+[ext_resource type="Texture2D" uid="uid://4np13xilve6d" path="res://Assets/UIBackground.png" id="1_hspqh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kwqee"]
+
+[node name="Menu" type="Control"]
+z_index = 1000
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 240.0
+offset_bottom = 160.0
+texture = ExtResource("1_hspqh")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "123"
+label_settings = SubResource("LabelSettings_kwqee")
